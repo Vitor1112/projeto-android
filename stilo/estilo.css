@@ -58,7 +58,7 @@ main a:hover{
 }
 header{
     background-image: linear-gradient(to bottom,var(--cor2),var(--cor5) );/* Sempre tenho escreve VAR depois Abrir parenteses e depois coloca um traço exemplo - */
-    height: 150px;
+    min-height: 150px;
     text-align: center;
     padding-top: 40px; /* Para afasta texto que esta escrito em H1 da margem de cima uso Padding -top ou uso margin -top em  header>h1 caso não funciona em header*/
     
