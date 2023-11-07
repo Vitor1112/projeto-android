@@ -69,7 +69,7 @@ header > h1 {
     font-family: var(--fonte-destaque);
     font-size: 3em ;
     font-weight: normal;  /* Lembra sempre em deixa em negrito */
-    padding-bottom: 50px;/* espaço  de baixo do h1 e paragrafo de P*/
+    padding-bottom: 20px;/* espaço  de baixo do h1 e paragrafo de P*/
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.664);/* Sombra no TExto do  H1*/
   
     
