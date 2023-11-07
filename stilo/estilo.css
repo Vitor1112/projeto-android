@@ -112,8 +112,8 @@ header > p{
     max-width: 600px;/* Para quando eu diminuir a tela o que esta escrito dentro paragrafo , fica centralizado do mesmo tamanho do texto que escrito no  H1  */
     padding-right: 10px;
     padding-left: 10px;
-    padding-bottom: 50px;
     margin: auto; /* Tenho que usa para centraliza quando uso comando de cima */
+    padding-bottom: 50px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);/* Sombra no TExto do PARAGRAFO*/
 
    
