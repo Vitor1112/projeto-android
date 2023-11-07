@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family:'Android';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #22A84F;
+    --cor2: #2F7546;
+    --cor3: #00DB48;
+    --cor4: #284231;
+    --cor5: #29332C;
+    --fonte-padrao: Arial, verdana , Helvetica ,sans-serif;
+    --fonte-destaque:'Bebas Neue', sans-serif;
+    --fonte-android:'Android',sans-serif;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color:var(--cor0);
+    
+
+}
+a.externo::after{
+    content: ' \1F517';
+}
+main p { /*Para mexer com text Justify  somente dentro do MAIN , não vai altera Paragrafos do restante fora do MAIN*/
+    margin: 15px 0px; /* Para manter distancia entre H1 etc...*/
+    text-align: justify;
+    text-indent: 10px;
+    font-size: 1em;
+    line-height: 2em; /*Para manter distante entre Paragrafo de  cima e debaixo */
+}
+main strong{
+    color:var(--cor3);
+    font-weight: bold;
+ 
+}
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor4);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor3);
+
+}
+header{
+    background-image: linear-gradient(to bottom,var(--cor2),var(--cor5) );/* Sempre tenho escreve VAR depois Abrir parenteses e depois coloca um traço exemplo - */
+    height: 150px;
+    text-align: center;
+    padding-top: 40px; /* Para afasta texto que esta escrito em H1 da margem de cima uso Padding -top ou uso margin -top em  header>h1 caso não funciona em header*/
+    
+}
+
+header > h1 {
+    color:white;
+    font-family: var(--fonte-destaque);
+    font-size: 3em ;
+    font-weight: normal;  /* Lembra sempre em deixa em negrito */
+    margin-bottom: 20px; /* espaço  de baixo do h1 e paragrafo de P*/
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.664);/* Sombra no TExto do  H1*/
+  
+    
+}
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px black;/* sombra de fora da NAV*/
+}
+nav > a{
+    color:var(--cor1);
+    padding: 10px;/* É para dar espaço entre nomes  que estão escrito dentro do A do link */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+nav > a:hover{
+    background-color:var(--cor3);
+    color: var(--cor5);
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px; /* Este comando deixa Main Desgrudado do rodapé e sempre tem esta embaixa do comando Margin auto */
+    padding: 20px;
+    background-color: white;
+    box-shadow:0px 0px 0px rgba(0, 0, 0, 0.418) ; /* Sombra da borda laterais do Main */
+    border-bottom-left-radius: 10px;
+    border-top-right-radius:10px ;
+
+}
+
+header > p{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color:white;
+    max-width: 600px;/* Para quando eu diminuir a tela o que esta escrito dentro paragrafo , fica centralizado do mesmo tamanho do texto que escrito no  H1  */
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    margin: auto; /* Tenho que usa para centraliza quando uso comando de cima */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);/* Sombra no TExto do PARAGRAFO*/
+
+   
+  
+}
+
+main h1 {
+    color:var(--cor2);
+   font-family: var(--fonte-android);
+   font-weight: normal;/* Lembra sempre em deixa em negrito */
+   font-size: 1.8em;
+
+}
+main h2{
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    font-weight: normal;/* Lembra sempre em deixa em negrito */
+    background-image: linear-gradient(to right,var(--cor1),transparent);/* comando para deixa  background diferente dentro qualquer H2 etc...  */
+    text-indent: 8px;
+    
+}
+main img{
+    width: 100%;
+}
+main img.pequena{
+    max-width: 350px; /* Este precho é referente a class de imagem */
+    display: block; /* Tenho que dar comando DISPLAY BLOCK PARA UMA IMAGEM SEM PICTURE*/
+    margin: auto;
+}
+div.video{
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;/* ATENÇÃO abrindo margem para direita */
+    padding: 20px;
+    padding-bottom: 58%;/* ATENÇÃO para mexer com barra preta do video*/
+    position: relative;/* ATENÇÃO abrindo margem para direita */
+    
+}
+div.video > iframe{
+    position:absolute ;/* ATENÇÃO abrindo margem para direita */
+    top: 5%;
+    left:5%;
+    width: 90%;/* ATENÇÃO abrindo margem para direita */
+    height: 90%;/* ATENÇÃO abrindo margem para direita */
+
+}
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+aside > h3{
+
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px ;
+    margin: -10px -10px 0px -10px;/* Aqui para margem crescer 10cm pra fora do H3 -10 px pra cima , -10px direita , 0px para baixo e -10px esquerda */
+    border-radius: 10px 10px 0px 0px;/* Depois para arrendonda a parte de cima do que ficou modificado */
+    font-weight: normal/* Lembra sempre em deixa em negrito */;
+
+}
+aside > ul{
+    list-style-type:'\1F5F8\00A0\00A0';/* Comando para remover as bolinhas do UL e coloca uma figura de Emoji da minha preferenciae para deixa espaço entre emoji e numero coloca '\00A0\00A0" */
+
+    list-style-position: inside;/* Para coloca as bolinhas da UL para dentro da página que esta saindo */
+
+    columns: 2; /* Comando para dividir uma lista e coloca uma do lado da outra  */
+  
+    
+
+}
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em ;
+    padding: 5px;
+}
+footer> p > a { /*Esta mostrando co caminho primeiro vem P depois vem A , mas poderia coloca FOOTER A */
+    color:white ;
+    font-weight: bolder;
+    text-decoration: none;
+
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
